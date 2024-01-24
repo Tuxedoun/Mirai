@@ -9,55 +9,6 @@ function getFormattedDate() {
 	return `${date.getFullYear()}-${(date.getMonth() + 1).toString().padStart(2, '0')}-${date.getDate().toString().padStart(2, '0')} ${date.getHours().toString().padStart(2, '0')}:${date.getMinutes().toString().padStart(2, '0')}:${date.getSeconds().toString().padStart(2, '0')}`;
 }
 
-function logUptime() {
-	const uptime = process.uptime();
-	const formattedDate = getFormattedDate();
-	const data = `${formattedDate} - Uptime: ${uptime.toFixed(2)} seconds\n`;
-
-	fs.appendFile('uptime.json', data, (err) => {
-		if (err) throw err;
-		console.log('Uptime logged.');
-
-		const uptimeLimit = 24 * 60 * 60; // 24 hours in seconds
-		if (uptime >= uptimeLimit) {
-			console.log('24 hours uptime reached. Stopping logging.');
-			clearInterval(intervalId); // Stop the interval when 24 hours are reached
-		}
-	});
-}
-
-const intervalId = setInterval(logUptime, 300000); // Log uptime every 5 minutes (300,000 milliseconds)
-
 // Using os module to get platform information
 console.log('Operating System Platform:', os.platform());
 console.log('Operating System CPU Architecture:', os.arch());
-
-// Using chokidar module for file watching
-const watcher = chokidar.watch('targetDir', { persistent: true });
-
-watcher.on('change', (path) => {
-	console.log(`File ${path} has been changed`);
-});
-
-watcher.on('error', (error) => {
-	console.error(`Watcher encountered an error: ${error}`);
-});
-
-function getUptime() {
-	const uptime = os.uptime();
-	const hours = Math.floor(uptime / 3600);
-	const minutes = Math.floor((uptime % 3600) / 60);
-	const seconds = Math.floor(uptime % 60);
-
-	return `${hours} hours, ${minutes} minutes, ${seconds} seconds`;
-}
-
-function monitorUptime() {
-	setInterval(() => {
-		const uptime = getUptime();
-		console.log(`System uptime: ${uptime}`);
-	}, 300000); // Change the interval (in milliseconds) as needed
-}
-
-monitorUptime();
-

@@ -10,6 +10,8 @@ module.exports.config = {
 };
 
 module.exports.run = async function ({ api, event }) {
+const { join } = require('path');
+const axios = require('axios');
 	const request = require("request");
 	const fs = global.nodemodule["fs-extra"];
 	const { threadID } = event;
@@ -20,11 +22,7 @@ module.exports.run = async function ({ api, event }) {
 			threadID,
 			api.getCurrentUserID()
 		);
-		api.sendMessage(
-			`Connected successfully!\nThank you for using this bot, have fun using it\n\nUsage: ${global.config.PREFIX}help\nUse ${global.config.PREFIX}callad if there is an error to the Bot the bot admin will try to fix this as soon as possible.`,
-			threadID
-		);
-		api.sendMessage({ sticker: 40130 }, threadID);
+		api.sendMessage("", event.threadID, () => api.sendMessage({ body: `🔴🟡🟢\n\n✅ Connected successfully!....\n•──────────────────•\n→ Admin: CliffVincent\n→ Facebook: https://www.facebook.com/swordigo.swordslush\n\nUsage: ${global.config.PREFIX}help\nUse ${global.config.PREFIX}callad if there is an error to the Bot the bot admin will try to fix this as soon as possible\n→ Thank you for using this bot, have fun using it.`, attachment: fs.createReadStream(__dirname + "/cache/join/connected.mp4") }, threadID));
 	} else {
 		try {
 			const { threadName, participantIDs } = await api.getThreadInfo(threadID);
