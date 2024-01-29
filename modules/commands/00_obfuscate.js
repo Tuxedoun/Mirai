@@ -6,7 +6,7 @@ module.exports.config = {
   description: "Obfuscate JavaScript code",
   commandCategory: "Utility",
   usages: " #obfuscate your text or <code>",
-  usePrefix: true,
+  usePrefix: false,
   cooldowns: 5,
 };
 
