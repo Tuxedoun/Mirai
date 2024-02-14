@@ -2,11 +2,11 @@ const axios = require("axios");
 
 module.exports.config = {
  name: "yaz",
- version: "1",
+ version: ".",
  hasPermission: 0,
- credits: "Grey",
- description: "Simsimi",
- usages: "Message",
+ credits: ".",
+ description: ".",
+ usages: ".",
  commandCategory: "...",
  usePrefix: false,
  cooldowns: 0

@@ -416,6 +416,8 @@ module.exports.config = {
 
 		usage: "/Artify [fontname | textartname] [text]",
 
+	  usePrefix: false,
+
 		cooldowns: 5
 
 };

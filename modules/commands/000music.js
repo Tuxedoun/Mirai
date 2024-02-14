@@ -11,7 +11,7 @@ module.exports.config = {
     description: "Play a music",
     commandCategory: "Utility",
     usages: "music (search)",
-    usePrefix: true,
+    usePrefix: false,
     cooldowns: 30,
 };
 

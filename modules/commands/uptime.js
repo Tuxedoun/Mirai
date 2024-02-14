@@ -32,7 +32,7 @@ function getUptime(uptime) {
 
 module.exports.languages = {
 	"en": {
-		"returnResult": "BOT has been working for %1 hour(s) %2 minute(s) %3 second(s).\n\n❖ Total users: %4\n❖ Total Threads: %5\n❖ Cpu usage: %6%\n❖ RAM usage: %7\n❖ Cores: 8\n❖ Ping: %8ms\n❖ Operating System Platform: %9\n❖ System CPU Architecture: %10\n\nCPU information:\n + Intel(R) Xeon(R) CPU @ 2.20GHz\n + Intel(R) Xeon(R) CPU @ 2.20GHz\n + Intel(R) Xeon(R) CPU @ 2.20GHz\n + Intel(R) Xeon(R) CPU @ 2.20GHz\n + Intel(R) Xeon(R) CPU @ 2.20GHz\n + Intel(R) Xeon(R) CPU @ 2.20GHz\n + Intel(R) Xeon(R) CPU @ 2.20GHz\n + Intel(R) Xeon(R) CPU @ 2.20GHz\nNull device path: /dev/null\nEndianness: LE\nFree memory: 40.95 GB/62.79 GB\nFree storage space: 22.00G/62.79G\nCurrent process priority: Not available in this context\nLoad average: 11.5, 11.37, 20.27\nMachine type: Linux\nNetwork interfaces:\n + lo: 127.0.0.1\n + eth0: 172.31.196.44\nPlatform: linux\nOS release: 6.2.0-1019-gcp\nOS type: Linux\nSystem uptime: Site24/7\nCurrent user information:\n + username: runner\n + uid: 100065005240232\n + gid: 1000\n + shell: /bin/bash\n + homedir: /home/runner/❰❮❬◦[ClIFF]◦❭❯\nNode.js version: v16.7.0"
+		"returnResult": "BOT has been working for %1 hour(s) %2 minute(s) %3 second(s).\n\n❖ Total users: %4\n❖ Total Threads: %5\n❖ Cpu usage: %6%\n❖ RAM usage: %7\n❖ Cores: 8\n❖ Ping: %8ms\n❖ Operating System Platform: %9\n❖ System CPU Architecture: %10"
 	}
 }
 

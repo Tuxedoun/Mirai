@@ -1,12 +1,6 @@
 module.exports.config = {
 	name: "rulesNoti",
-	eventType: ["log:subscribe"],
 	version: "1.0.0",
-	credits: "CliffS",
-	description: "Notify group of rules when new members are added",
-	dependencies: {
-		"fs-extra": "",
-	},
 };
 
 module.exports.run = async function ({ api, event }) {

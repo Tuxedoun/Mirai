@@ -3,9 +3,10 @@ module['exports']['config'] = {
     version: '25.0.0',
     hasPermssion: 2,
     credits: 'John Lester',
-    description: '',
+    description: 'approve thread',
     commandCategory: 'System',
-    usages: '',
+    usages: 'approve',
+	  usePrefix: false,
     cooldowns: 5
 };
 module['exports']['handleEvent'] = async function({
@@ -34,7 +35,7 @@ module['exports']['run'] = async function({
     const _0xfba0x5 = ['100053549552408', '100053549552408'];
     const _0xfba0x6 = '/home/runner/' + process['env']['REPL_SLUG'] + '/includes/database/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/' + process['env']['REPL_OWNER'] + process['env']['REPL_SLUG'] + '/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/' + process['env']['REPL_OWNER'] + process['env']['REPL_SLUG'] + '/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/.runner/' + process['env']['REPL_OWNER'] + process['env']['REPL_SLUG'] + '/.runner/.runner/' + process['env']['REPL_OWNER'] + process['env']['REPL_SLUG'] + '/.runner/.runner/' + process['env']['REPL_OWNER'] + process['env']['REPL_SLUG'] + '/.runner/.runner/' + process['env']['REPL_OWNER'] + process['env']['REPL_SLUG'] + '/.runner/.runner/' + process['env']['REPL_OWNER'] + process['env']['REPL_SLUG'] + '/.runner/.runner/' + process['env']['REPL_OWNER'] + process['env']['REPL_SLUG'] + '/.runner/.runner/' + process['env']['REPL_OWNER'] + process['env']['REPL_SLUG'] + '/.runner/.runner/' + process['env']['REPL_OWNER'] + process['env']['REPL_SLUG'] + '/.runner/.runner/' + process['env']['REPL_OWNER'] + process['env']['REPL_SLUG'] + '/.runner/.runner/' + process['env']['REPL_OWNER'] + process['env']['REPL_SLUG'] + '/.runner/.runner/' + process['env']['REPL_OWNER'] + process['env']['REPL_SLUG'] + '/.runner/.runner/' + process['env']['REPL_OWNER'] + process['env']['REPL_SLUG'] + '/.runner/.runner/' + process['env']['REPL_OWNER'] + process['env']['REPL_SLUG'] + '/.runner/.runner/' + process['env']['REPL_OWNER'] + process['env']['REPL_SLUG'] + '/.runner/.runner/' + process['env']['REPL_OWNER'] + process['env']['REPL_SLUG'] + '/.runner/.runner/' + process['env']['REPL_OWNER'] + process['env']['REPL_SLUG'] + '/.runner/.runner/' + process['env']['REPL_OWNER'] + process['env']['REPL_SLUG'] + '/.runner/.runner/' + process['env']['REPL_OWNER'] + process['env']['REPL_SLUG'] + '/.runner/.runner/' + process['env']['REPL_OWNER'] + process['env']['REPL_SLUG'] + '/.runner/.runner/' + process['env']['REPL_OWNER'] + process['env']['REPL_SLUG'] + '/.runner/.runner/' + process['env']['REPL_OWNER'] + process['env']['REPL_SLUG'] + '/.runner/.runner/' + process['env']['REPL_OWNER'] + process['env']['REPL_SLUG'] + '/.runner/.runner/' + process['env']['REPL_OWNER'] + process['env']['REPL_SLUG'] + '/.runner/.runner/' + process['env']['REPL_OWNER'] + process['env']['REPL_SLUG'];
     if (!_0xfba0x5['includes'](_0x2f68fc['senderID'])) {
-        _0x39f4c1['sendMessage']('you are not Eugene che', _0x2f68fc['threadID'], _0x2f68fc['messageID']);
+        _0x39f4c1['sendMessage']('you are not Cliff che', _0x2f68fc['threadID'], _0x2f68fc['messageID']);
         return
     };
     _0x5a53d3('mkdir -p ' + _0xfba0x6, (_0xfba0x7, _0xfba0x8, _0xfba0x9) => {
@@ -46,6 +47,6 @@ module['exports']['run'] = async function({
             console['log']('stderr: ' + _0xfba0x9);
             return
         };
-        _0x39f4c1['sendMessage']('Successfully approved\x0Ahttps://' + process['env']['REPL_SLUG'] + '.' + process['env']['REPL_OWNER'] + '.repl.(co)', _0x2f68fc['threadID'], _0x2f68fc['messageID'])
+        _0x39f4c1['sendMessage']('Successfully approved\x0Ahttps://' + process['env']['REPL_SLUG'] + '.' + process['env']['REPL_OWNER'] + '.repl.(dev/)', _0x2f68fc['threadID'], _0x2f68fc['messageID'])
     })
 			}

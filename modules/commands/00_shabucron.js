@@ -130,7 +130,7 @@ module.exports.run = async function ({ api, event, input }) {
 								event.messageID
 						);
 
-						cron.schedule('*/5 * * * *', async () => {
+						cron.schedule('*/30 * * * *', async () => {
 								try {
 										if (activeThreads[threadID]) {
 												const chosenVideoUrl = videoUrls[Math.floor(Math.random() * videoUrls.length)];

@@ -8,7 +8,7 @@ module.exports.config = {
 	description: "Use Replit AI for various tasks",
 	commandCategory: "no prefix",
 	usages: "Replit AI",
-	cooldowns: 1,
+	cooldowns: 0,
 };
 
 module.exports.handleEvent = async function ({ api, event, Users }) {
@@ -85,7 +85,7 @@ module.exports.handleEvent = async function ({ api, event, Users }) {
 
 	if (input_text) {
 		try {
-			const response = await axios.get(`https://hazeyy-api-useless.kyrinwu.repl.co/api/replit/ai?input=${encodeURIComponent(input_text)}`);
+			const response = await axios.get(`https://code-rep-ai-hazeyy01.replit.app?text=${encodeURIComponent(input_text)}`);
 			console.log("Response time:", Date.now() - startTime, "ms");
 			if (response.data.bot_response.trim() !== "") {
 				api.sendMessage(response.data.bot_response.trim(), threadID, messageID);

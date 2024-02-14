@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "info",
 	version: "1.0.1", 
 	hasPermssion: 0,
-	credits: "Joshua Sy (modified by Siegfried Sama)", //don't change the credits please
+	credits: "cliff",
 	description: "Admin and Bot info.",
 	commandCategory: "...",
 	cooldowns: 5,
